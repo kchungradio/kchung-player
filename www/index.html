@@ -22,27 +22,29 @@
 
   <body bgcolor="#ff0000"> 
     <div class="app">
-
-      <audio class="player" id="player" preload="none">
-        <source src="http://s9.voscast.com:7376/;&type=mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-      </audio>
-
       <div class="kchung">
-        <a href="http://www.kchungradio.org">
-          <img src="img/kchungblood.png" border="0" style="width:100%;">
-        </a>
-      </div>
 
-      <div class="play-pause">
-        <a href="" class="play-button">
-          <i class="fa fa-play big-icon" aria-hidden="true"></i>
-        </a>
-        <a href="" class="pause-button hidden">
-          <i class="fa fa-pause big-icon" aria-hidden="true"></i>
-        </a>
-      </div>
+        <div class="branding">
+          <a href="http://www.kchungradio.org">
+            <img src="img/kchungblood.png" border="0">
+          </a>
+        </div>
 
+        <div class="play-pause">
+          <a href="" class="play-button">
+            <i class="fa fa-play big-icon" aria-hidden="true"></i>
+          </a>
+          <a href="" class="pause-button hidden">
+            <i class="fa fa-pause big-icon" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <audio class="player" id="player" preload="none">
+          <source src="http://s9.voscast.com:7376/;&type=mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+      </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
