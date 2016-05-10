@@ -23,10 +23,10 @@
     <engine name="ios" spec="~4.1.1" />
     <preference name="deployment-target" value="7.0" />
     <preference name="Orientation" value="portrait" />
-    <!-- Set following to true, Test your app thoroughly since this disables onclick handlers, but plays nice with ontouchend.
-         If this setting is true, SuppressesLongPressGesture will effectively be true as well. -->
-    <preference name="SuppressesLongPressGesture" value="false" />
-    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="SuppressesLongPressGesture" value="true" />
+    <!-- If you set following to true, test your app thoroughly since
+         this disables onclick handlers, but plays nice with ontouchend. -->
+    <!-- <preference name="Suppresses3DTouchGesture" value="true" /> -->
     <preference name="DisallowOverscroll" value="true" />
     <!--
     <preference name="" value="" />
