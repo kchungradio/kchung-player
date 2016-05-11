@@ -10,7 +10,7 @@
         * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
             * Enable inline JS: add 'unsafe-inline' to default-src
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' http://cdn.voscast.com/stats/display.js 'unsafe-eval';media-src *">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -37,6 +37,11 @@
           <a href="" class="pause-button hidden">
             <i class="fa fa-pause big-icon" aria-hidden="true"></i>
           </a>
+        </div>
+
+        <div class="metadata">
+          <div>now playing: </div>
+          <script type="text/javascript" src="http://cdn.voscast.com/stats/display.js?key=5813540d2a3848320a3903b36067732a&amp;stats=songtitle"></script>
         </div>
 
         <audio class="player" id="player" preload="none">
