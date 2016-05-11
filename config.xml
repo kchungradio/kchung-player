@@ -61,4 +61,8 @@
         <icon src="res/icons/ios/icon-50.png" width="50" height="50" />
         <icon src="res/icons/ios/icon-50@2x.png" width="100" height="100" />
     </platform>
+
+    <platform name="ios">
+      <splash src="res/screens/ios/Default-667h.png" width="750" height="1334"/>
+    </platform>
 </widget>
